@@ -1,0 +1,35 @@
+version: '3.7'
+
+services:
+
+ app1:
+  image: "volume-test"
+  ports:
+   - "8081:80"
+  build: "."
+  volumes:
+   - "./src:/usr/share/nginx/html"   
+
+ app2:
+  image: "volume-test"
+  ports:
+   - "8082:80"
+  build: "."
+  volumes:
+   - "./src:/usr/share/nginx/html"   
+
+ app3:
+  image: "volume-test"
+  ports:
+   - "8083:80"
+  build: "."
+  volumes:
+   - "./src:/usr/share/nginx/html"
+
+ app4:
+  image: "volume-test"
+  ports:
+   - "8084:80"
+  build: "."
+  volumes:
+   - "./src:/usr/share/nginx/html"    
